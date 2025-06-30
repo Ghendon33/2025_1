@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Garrett Hendon | Engineering Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px auto;
-      max-width: 900px;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    header, section {
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     h1, h2 {
-      color: #1a1a1a;
+      margin-top: 0;
     }
-    .header, .project {
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    .contact a {
+      text-decoration: none;
+      color: #007acc;
     }
-    a {
-      color: #0066cc;
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
     }
     .skills {
       font-style: italic;
-      color: #555;
+      color: #444;
     }
   </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>Garrett Hendon</h1>
-  <p><strong>Email:</strong> garretthendon48@yahoo.com<br>
-     <strong>Phone:</strong> 517-927-6656<br>
-     <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/garrett-hendon-495452282">My Profile</a><br>
-     <strong>Location:</strong> Kalamazoo, MI</p>
-</div>
+<div class="container">
 
-<div class="header">
-  <h2>Engineering Project Portfolio</h2>
-  <p>This is a collection of engineering class projects from my time as an Aerospace Engineering student at Western Michigan University.</p>
-</div>
+  <header>
+    <h1>Garrett Hendon</h1>
+    <p>Aerospace Engineering Student at Western Michigan University</p>
+    <p class="contact">
+      📧 <a href="mailto:garretthendon48@yahoo.com">garretthendon48@yahoo.com</a> | 
+      📱 517-927-6656 |
+      🔗 <a href="https://www.linkedin.com/in/garrett-hendon-495452282" target="_blank">LinkedIn</a>
+    </p>
+  </header>
 
-<div class="project">
-  <h2>🚀 Rocket Nozzle Design using Rao’s Method</h2>
-  <p><strong>Course:</strong> Propulsion Systems | <strong>Tools:</strong> MATLAB, Excel</p>
-  <p>Designed a parabolic rocket nozzle using Rao's method. Balanced thrust performance with structural and thermal constraints.</p>
-  <ul>
-    <li>Implemented Rao’s contouring in MATLAB</li>
-    <li>Validated area ratios and wall shape with isentropic flow equations</li>
-    <li>Used iterative techniques for expansion angle refinement</li>
-  </ul>
-  <p class="skills">Skills: Supersonic flow, MATLAB scripting, thermodynamics</p>
-</div>
+  <section class="project">
+    <h2>🚀 Rocket Nozzle Design using Rao’s Method</h2>
+    <p><strong>Course:</strong> Propulsion Systems • <strong>Tools:</strong> MATLAB, Excel</p>
+    <p>Designed a parabolic rocket nozzle using Rao’s method for optimum supersonic flow expansion in high-thrust applications.</p>
+    <ul>
+      <li>Generated nozzle contour with iterative calculations</li>
+      <li>Validated results using isentropic relations and CEA data</li>
+      <li>Optimized exit area and angle for minimal divergence losses</li>
+    </ul>
+    <p class="skills">Skills: MATLAB, compressible flow, propulsion design</p>
+    <img src="images/nozzle_plot.png" alt="Rocket nozzle plot">
+  </section>
 
-<div class="project">
-  <h2>✈️ Turbojet Engine Performance Analysis</h2>
-  <p><strong>Course:</strong> Aerospace Propulsion | <strong>Tools:</strong> MATLAB</p>
-  <p>Created a turbojet engine model to compute thrust and TSFC across various Mach numbers.</p>
-  <ul>
-    <li>Built a MATLAB simulation based on Brayton cycle</li>
-    <li>Compared results to empirical engine data</li>
-    <li>Included inlet/diffuser efficiency corrections</li>
-  </ul>
-  <p class="skills">Skills: Engine cycles, MATLAB, data analysis</p>
-</div>
+  <section class="project">
+    <h2>✈️ Turbojet Engine Performance Analysis</h2>
+    <p><strong>Course:</strong> Aerospace Propulsion • <strong>Tools:</strong> MATLAB</p>
+    <p>Analyzed thrust, TSFC, and efficiency of a turbojet engine under different Mach conditions for a supersonic interceptor mission.</p>
+    <ul>
+      <li>Built full Brayton cycle simulation</li>
+      <li>Plotted thrust vs. altitude and speed curves</li>
+      <li>Included inlet/diffuser and afterburner effects</li>
+    </ul>
+    <p class="skills">Skills: Thermodynamics, propulsion cycle modeling, performance visualization</p>
+    <img src="images/turbojet_results.png" alt="Turbojet performance plots">
+  </section>
 
-<!-- Add more project blocks as needed -->
+  <!-- Add more sections here for your other projects -->
 
-<div class="header">
-  <h2>📲 View as PDF</h2>
-  <p><a href="LINK_TO_YOUR_PDF">Click here to view/download the full PDF version of my portfolio</a></p>
-  <p>Scan this QR code for quick access:</p>
-  <img src="LINK_TO_YOUR_QRCODE_IMAGE" alt="QR code to portfolio" width="150">
+  <section>
+    <h2>📄 Resume + QR Code</h2>
+    <p><a href="documents/Garrett_Hendon_Resume.pdf" target="_blank">View My Resume</a></p>
+    <p>Scan to view portfolio:</p>
+    <img src="images/qr_code.png" alt="QR Code to Portfolio" width="150">
+  </section>
+
+  <footer>
+    &copy; 2025 Garrett Hendon
+  </footer>
+
 </div>
 
 </body>
